@@ -4,10 +4,13 @@ let nAleatorio = (number) => (Math.round(Math.random() * number));
 //calcula
 let cal = (dividendo, divisor) => Math.round(dividendo - (Math.floor(dividendo / divisor) * divisor));
 
-function gerar() {
-    // ? gerador.numero.value =  cnpj() : gerador.numero.value = cnpj();
-    console.log(gerador.tipo.value.cpf)
-    gerador.numero.value = (gerador.tipo) ? cpf() : cnpj();
+function gerarCpf() {
+    document.gerador.numero.value = cpf();
+
+}
+
+function gerarCnpj() {
+    document.gerador.numero.value = cnpj();
 }
 
 
