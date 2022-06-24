@@ -2,7 +2,8 @@
 
 
 ```
-O projeto tem como intuito aprender um pouco mas de javaScript e entender como os outros sites de criação desses números funcionam 
+O projeto tem como intuito aprender um pouco mas de javaScript e entender como 
+os outros sites de criação desses números funcionam 
 ```
 
 #### Video apresentativo
