@@ -6,7 +6,6 @@ let cal = (dividendo, divisor) => Math.round(dividendo - (Math.floor(dividendo /
 
 function gerarCpf() {
     document.gerador.numero.value = cpf();
-
 }
 
 function gerarCnpj() {
@@ -61,8 +60,13 @@ function cnpj() {
     } else
         return `${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${n9}${n10}${n11}${n12}${digVerificadorPri}${digVerificadorSeg}`
 
-
 }
 
+// function limpar(){
+//     reset()
+// }
+
+// limpar campo
+document.getElementById("limpar").reset();
 
 

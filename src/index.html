@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de CPF e CNPJ</title>
     <script src="./gerador.js"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Roboto+Condensed:ital,wght@0,300;0,400;1,700&display=swap');
+    </style>
 </head>
+
 <body>
-    <h1>Gere você mesmo seu CPF e CNPJ</h1>
+    <div class="container">
 
-    <form action="" name="gerador">
-        <label for="">Número</label>
-        <input type="text" name="numero" id="numero">
+        <form action="" name="gerador" class="form">
+            <div>
+                <p class="titulo">Gere você mesmo CPF e CNPJ válidos</p>
+            </div>
 
-        <div>
-            <p>Máscara</p>
-            <input type="checkbox" name="mascara" value="mascara" id="mascara" checked>
-        </div>
+            <div class="campoN">
+                <!-- <label for="">Número</label> -->
+                <input type="text" name="numero" id="numero" placeholder="Número">
+            </div>
 
-        <h3>Tipo</h3>
-        <input type="button" name="tipo" onclick="gerarCpf()" value="CPF" id="cpf">
-        <input type="button" name="tipo" onclick="gerarCnpj()" value="CNPJ" id="cnpj">
-    </form>
+            <div class="campoMascara">
+                <p>Máscara</p>
+                <label class="styleMascara">
+                    <input type="checkbox" name="mascara" value="mascara" id="mascara" checked>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="campoGerar">
+                <div class="gerarN">
+                    <h3>Tipo</h3>
+                    <div class="inputN">
+                        <input type="button" name="tipo" onclick="gerarCpf()" value="CPF">
+                        <input type="button" name="tipo" onclick="gerarCnpj()" value="CNPJ">
+                    </div>
+                </div>
+                <div class="limpaN">
+                    <input type="reset" id="limpar" onclick="limpar()" value="Limpar">
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
